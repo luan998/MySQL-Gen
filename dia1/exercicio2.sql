@@ -24,6 +24,11 @@ insert into tb_produtos(nome,preco,quantidade,disponivel,frete) values("Caixa de
 insert into tb_produtos(nome,preco,quantidade,disponivel,frete) values("Cachecol", 225.00,0,false,true);
 
 select * from tb_produtos;
+--  Produtos com preço maior que 500 reais
+select * from tb_produtos where preco > 500.00;
+
+-- Produtos com preço menor que 500 reais
+select * from tb_produtos where preco < 500;
 
 -- Mais cachecóis chegaram para serem vendidos
 update tb_produtos set quantidade = 20, disponivel  = true where id = 8;
