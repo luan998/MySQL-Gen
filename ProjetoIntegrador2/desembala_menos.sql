@@ -16,7 +16,7 @@ CREATE TABLE `Produto` (
 	`preco` DECIMAL(8,2) NOT NULL,
 	`dtfabricacao` DATE NOT NULL,
 	`descricao` varchar(255) NOT NULL,
-	`imagem` varchar(255) NOT NULL,
+	`imagem` varchar(1000) NOT NULL,
 	`ativo` BOOLEAN NOT NULL,
 	`categoria_id` bigint NOT NULL,
 	PRIMARY KEY (`id`)
